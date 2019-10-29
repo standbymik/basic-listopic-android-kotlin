@@ -11,7 +11,7 @@ import retrofit2.http.Query
 interface ForumService {
 
     @GET("forum/room_topic")
-    @Headers("authorization: Basic dGVzdGVyOnRlc3Rlcg==")
+    @Headers("authorization: Basic xxx")
     fun getRoomTopic(@Query("room") room: String, @Query("next_id") nextId: Int?): Call<RoomTopic>
 
     companion object{
